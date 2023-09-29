@@ -18,11 +18,12 @@ body {
 }
 .card {
   width: 28.75rem;
-  height: 30.625rem;
+
+  /* height: 30.625rem; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 2rem;
   background: #fff;
   border-radius: 10px;
   box-shadow: 8px 8px 10px 0px rgba(190, 187, 187, 0.75);
@@ -46,9 +47,10 @@ body {
 .card-header {
   color: #151a41;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 14px;
   margin-left: 1rem;
   margin-right: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 /* BODY*/
@@ -68,6 +70,7 @@ body {
   border-radius: 0.5rem;
   font-weight: 600;
   font-size: 18px;
+  cursor: pointer;
 }
 
 .caja:hover {
@@ -84,20 +87,34 @@ body {
 }
 
 .puntuacion-text p:first-child {
-  margin-right: 6rem;
+  text-align: left;
 }
 
 .puntuacion-text p:last-child {
   text-align: right;
 }
+
+.term {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
 /* Estilo personalizado para el checkbox */
 .term input[type="checkbox"] {
   transform: scale(1.5);
   margin-right: 10px;
+  width: 0.65rem;
+  height: 0.65rem;
+  cursor: pointer;
+  /* border: 1px solid #151a41;
+  border-radius: 0.15rem;
+  appearance: none; */
 }
 
 .term label {
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: 600;
   vertical-align: middle;
 }
 
@@ -106,6 +123,7 @@ hr {
   width: 90%;
   margin-left: 1rem;
   margin-right: 1rem;
+  margin-bottom: 1.5rem;
 }
 /*FOOTER */
 .card-footer {
@@ -115,7 +133,8 @@ hr {
 }
 
 .card-footer button {
-  padding: 1rem 7rem;
+  width: 100%;
+  padding: 1rem 0;
   font-size: 18px;
   font-weight: 600;
   color: #151a41;
@@ -123,6 +142,7 @@ hr {
   border: 1px solid #151a4171;
   border-radius: 5px;
   cursor: pointer;
+  margin-bottom: 1.5rem;
 }
 
 .card-footer button:hover {
